@@ -1,0 +1,25 @@
+{
+  "name": "manager_cautari",
+  "version": "1.0.0",
+  "description": "Faza 1 proiect",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdandcb/dcb.w1.git"
+  },
+  "author": "Diaconu Andrei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogdandcb/dcb.w1/issues"
+  },
+  "homepage": "https://github.com/bogdandcb/dcb.w1#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.27.0"
+  }
+}
