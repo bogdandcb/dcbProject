@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/bogdandcb/dcb.w1#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.1",
-    "sequelize": "^4.27.0"
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.31.0"
   }
 }
