@@ -15,7 +15,7 @@ class ContinutStocat{
             .then((response)=>
             {
             this.content=response.data
-            this.emitter.emit('CAR LOADING..')
+            this.emitter.emit('CAUTARI LOADING..')
         })
         .catch((error)=>console.warn(error))
     }
