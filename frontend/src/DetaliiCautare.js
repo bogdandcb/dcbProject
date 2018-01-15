@@ -27,7 +27,7 @@ constructor(props){
 }
  componentDidMount(){
    store.getAll(this.props.user.id) 
-   emitter.addListener('CAR LOADING..', () =>{
+   emitter.addListener('CAUTARI LOADING..', () =>{
        this.setState ({
            cautari_recentes : store.content
        })
