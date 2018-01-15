@@ -40,7 +40,7 @@ class CautariList extends Component{
             }
             this.selectCautari=(id)=>{
                 store.getOne(id)
-                emitter.addListener('Get_single_parking',()=>{
+                emitter.addListener('Get_cautari',()=>{
                     this.setState({
                         selected : store.selected,
                         detailsPt : id
@@ -58,7 +58,7 @@ class CautariList extends Component{
 
     componentDidMount(){
         store.getAll()
-        emitter.addListener('PARKING LIST LOADING..', () => {
+        emitter.addListener('Cautari Loading', () => {
             this.setState({
                 users : store.content
             })
