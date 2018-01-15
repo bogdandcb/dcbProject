@@ -13,7 +13,7 @@ class CautariStocate{
     getAll(){axios(SERVER + '/users')
             .then((response)=>{
             this.content=response.data
-            this.emitter.emit('PARKING LIST LOADING..')
+            this.emitter.emit('Cautari Loading')
         })
         .catch((error)=>console.warn(error))
     }
@@ -21,7 +21,7 @@ class CautariStocate{
          axios(SERVER + '/users/' + id)
          .then((response)=>{
              this.selected=response.data
-             this.emitter.emit('Get_single_parking')
+             this.emitter.emit('Get_cautari')
          })
          .catch((error)=>console.warn(error))
     }
@@ -50,7 +50,7 @@ class CautariStocate{
         axios.post(SERVER + '/users/',user)
         .then((response) => {
             this.content=response.data
-            this.emitter.emit("PARKING LOADING")
+            this.emitter.emit("CAUTARI LOADING")
         })
         .then(() => this.getAll())
         .catch((error) => console.warn(error))
